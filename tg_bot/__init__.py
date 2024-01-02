@@ -74,6 +74,7 @@ class KigyoINIT:
         self.NO_LOAD = self.parser.get("NO_LOAD").split()
         self.NO_LOAD: List[str] = list(map(str, self.NO_LOAD))
         self.spamwatch_api: str = self.parser.get('spamwatch_api', None)
+        self.spamwatch: str = self.parser.get('spamwatch', None)
         self.CASH_API_KEY: str = self.parser.get('CASH_API_KEY', None)
         self.TIME_API_KEY: str = self.parser.get('TIME_API_KEY', None)
         self.WALL_API: str = self.parser.get('WALL_API', None)
@@ -130,6 +131,7 @@ SUPPORT_USERS = get_user_list("supports")
 SARDEGNA_USERS = get_user_list("sardegnas")
 WHITELIST_USERS = get_user_list("whitelists")
 SPAMMERS = get_user_list("spammers")
+spamwatch = KInit.spamwatch
 spamwatch_api = KInit.spamwatch_api
 CASH_API_KEY = KInit.CASH_API_KEY
 TIME_API_KEY = KInit.TIME_API_KEY
