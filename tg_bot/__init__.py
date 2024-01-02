@@ -3,7 +3,6 @@ import os
 import sys
 import time
 from typing import List
-import spamwatch
 import telegram.ext as tg
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
